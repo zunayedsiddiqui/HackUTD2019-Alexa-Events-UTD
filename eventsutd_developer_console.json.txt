@@ -1,0 +1,111 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "u.t. dallas events",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "EventsThisWeek",
+                    "slots": [],
+                    "samples": [
+                        "what we got this week",
+                        "tell me about the events this week",
+                        "what are the events this week",
+                        "what's fun this week",
+                        "fun things this week",
+                        "events",
+                        "upcoming events this week",
+                        "this week",
+                        "events this week",
+                        "today's events",
+                        "today's event",
+                        "new events",
+                        "what events coming up",
+                        "what events this week",
+                        "tell me about this week's events",
+                        "give me some information"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "EventType",
+                    "slots": [
+                        {
+                            "name": "event",
+                            "type": "events"
+                        }
+                    ],
+                    "samples": [
+                        "I want to go to {event}",
+                        "I'll be going to {event}",
+                        "Add {event} to my favorites"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "events",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Hack UTD",
+                                "synonyms": [
+                                    "hack U T D",
+                                    "hackathon"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Gender Center",
+                                "synonyms": [
+                                    "Diversity Lunch at Gender Center",
+                                    "Diversity Lunch",
+                                    "Lunch at Gender Center"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Soccer",
+                                "synonyms": [
+                                    "House Cup Soccer",
+                                    "House Cup"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Meteor Theatre",
+                                "synonyms": [
+                                    "Avengers",
+                                    "movie",
+                                    "Meteor Theatre's Avengers",
+                                    "Meteor Theatre's movie"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
