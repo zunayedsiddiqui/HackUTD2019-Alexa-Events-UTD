@@ -33,12 +33,16 @@ https.get("https://www.utdallas.edu/calendar/mobile/events-by-date.php?type=thir
         console.log("Finished collecting data!")
         let $ = cheerio.load(data)
 
-        $('#event-detail .category-name').each(function(index, element){
-            console.log($(element).text())
+        $('#event-detail .cat-events.thirty-type').each(function(index, element){
             events[index] = {}
-            events[index]['name'] = $(element).text()
+            events[index]['title'] = $(element).find('.featured-title a').text()
+            events[index]['day'] = $(element).find('.day').text()
+            events[index]['month'] = $(element).find(".month").text()
+            events[index]['day'] = $(element).find(".day-left").text()
+            events[index]['time'] = $(element).find(".event-time-left").text()
+            console.log(events[index])
         })
-        
+
         /*
         jsonframe($)
         let weekly_data = $("body #event-detail div").scrape(frame)
