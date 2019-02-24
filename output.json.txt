@@ -1,0 +1,41 @@
+{
+	"body": {
+		"version": "1.0",
+		"response": {
+			"outputSpeech": {
+				"type": "SSML",
+				"ssml": "<speak>Okay, talk to you later, Whoosh!</speak>"
+			},
+			"shouldEndSession": true,
+			"type": "_DEFAULT_RESPONSE"
+		},
+		"sessionAttributes": {
+			"launchCount": 0,
+			"lastSpeechOutput": {},
+			"history": [
+				{
+					"IntentRequest": "LaunchRequest"
+				},
+				{
+					"IntentRequest": "EventsThisWeek"
+				},
+				{
+					"IntentRequest": "EventType",
+					"slots": [
+						{
+							"event": "hack UTD"
+						}
+					]
+				},
+				{
+					"IntentRequest": "AMAZON.FallbackIntent"
+				},
+				{
+					"IntentRequest": "AMAZON.CancelIntent"
+				}
+			],
+			"lastUseTimestamp": 0
+		},
+		"userAgent": "ask-node/2.0.0 Node/v8.10.0"
+	}
+}
