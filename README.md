@@ -1,4 +1,4 @@
-<h2>Hack UTD 2019</h2>
+<h1>Hack UTD 2019</h1>
 <h3>Alexa-Events-at-UTD</h3>
 <p>Repository for Alexa skill which tells the user about the events happening on campus at UT Dallas, and allows the user to add events to the user's calendar.</p> 
 
